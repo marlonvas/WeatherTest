@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="estilos.css" />
+    <script src="script.js" defer></script>
 
     <title>Consulta de Clima</title>
   </head>
@@ -15,21 +16,22 @@
             <div class="searchbox">
                 <input type="text" autocomplete="off" class="search" placeholder="Buscar ciudad" id="searchbox">
             </div>
-            <div class="btn">
-              <button>Buscar ciudad</button>
-              <button>Limpiar</button>
+            <div class="btn" >
+              <button id="search-form">Buscar ciudad</button>
+              <button id="search-delete">Limpiar</button>
             </div>
         </form>
+        
     </div>
     <div class="weather-card">
-        <div class="city">Neiva, COL</div>
-        <div class="date">09/08/2023</div>
-        <div class="temperature">
-            <img src="" alt="">
-            <div>14c</div>
+        <div class="city" id="city"></div>
+        <div class="date" id="date"></div>
+        <div class="temperature" id="temperature">
+            <img src="" class="temp-img" id="temp-img">
+            <div class="temp" id="temp"></div>
         </div>
-        <div class="weather">sol</div>
-        <div class="range">14/ 35</div>
+        <div class="weather" id="weather"></div>
+        <div class="range" id="range"></div>
    </div>
 
 
