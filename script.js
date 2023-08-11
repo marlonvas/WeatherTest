@@ -35,6 +35,9 @@ async function search(query){
     temp.innerHTML = `${toCelsius(data.main.temp)}c`;
     weather.innerHTML = data.weather[0].description;
     range.innerHTML = `${toCelsius(data.main.temp_min)}c / ${toCelsius(data.main.temp_max)}c`;
+    const lat = data.coord.lat;
+    const lon = data.coord.lon;
+    showLocationOnMap(lat, lon);
     updateImages(data);
   } catch (err) {
     console.log(err)
@@ -58,6 +61,13 @@ function borrarInput(event) {
     borrarInput(); 
     search(searchbox.value);
 }
+
+
+function showLocationOnMap(lat, lon) {
+    map.setView([lat, lon], 10); // Establece la vista del mapa en la ubicación
+    L.marker([lat, lon]).addTo(map); // Agrega un marcador en la ubicación
+}
+
 // Referencias a elementos del DOM para el formulario, el campo de búsqueda y el botón de borrado
 const searchform = document.getElementById('search-form');
 const searchbox = document.getElementById('searchbox');
@@ -65,3 +75,10 @@ const searchdelete = document.getElementById('search-delete');
 
 // Agregamos escuchadores de eventos para los clics en el formulario 
 searchform.addEventListener('click',onclick,true);
+const mapDiv = document.getElementById('map');
+
+
+let map = L.map('map').setView([4.639386,-74082412],2)
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);

@@ -3,40 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
 
     <link rel="stylesheet" href="estilos.css" />
     <script src="script.js" defer></script>
 
     <title>Consulta de Clima</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
   </head>
   <body>
+    
+    
+  
     <main>
-        <div class="search-form">
-        <form >
-            <div class="searchbox">
-                <input type="text" autocomplete="off" class="search" placeholder="Buscar ciudad" id="searchbox">
-            </div>
-            <div class="btn" >
-              <button id="search-form">Buscar ciudad</button>
-              <button id="search-delete">Limpiar</button>
-            </div>
+      <div class="search-form">
+        <form>
+          <div class="searchbox">
+            <input
+              type="text"
+              autocomplete="off"
+              class="search"
+              placeholder="Buscar ciudad"
+              id="searchbox"
+            />
+          </div>
+          <div class="btn">
+            <button id="search-form">Buscar ciudad</button>
+            <button id="search-delete">Limpiar</button>
+          </div>
         </form>
-        
-    </div>
-    <div class="weather-card">
+      </div>
+      <div class="weather-card">
         <div class="city" id="city"></div>
         <div class="date" id="date"></div>
         <div class="temperature" id="temperature">
-            <img src="" class="temp-img" id="temp-img">
-            <div class="temp" id="temp"></div>
+          <img src="" class="temp-img" id="temp-img" />
+          <div class="temp" id="temp"></div>
         </div>
         <div class="weather" id="weather"></div>
         <div class="range" id="range"></div>
-   </div>
-
-
+      </div>
     </main>
 
     <footer>Creado por Marlon Vasquez</footer>
+    <div id="map"></div>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
   </body>
 </html>
