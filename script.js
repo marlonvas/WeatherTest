@@ -77,7 +77,7 @@ const searchdelete = document.getElementById('search-delete');
 searchform.addEventListener('click',onclick,true);
 const mapDiv = document.getElementById('map');
 
-
+//se agrega para renderizar mapa y cordenadas por defecto
 let map = L.map('map').setView([4.639386,-74082412],2)
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
