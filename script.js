@@ -62,7 +62,7 @@ function borrarInput(event) {
     search(searchbox.value);
 }
 
-
+//funcion para  ubicar la ciudad en el mapa
 function showLocationOnMap(lat, lon) {
     map.setView([lat, lon], 10); // Establece la vista del mapa en la ubicación
     L.marker([lat, lon]).addTo(map); // Agrega un marcador en la ubicación
