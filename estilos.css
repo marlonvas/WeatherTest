@@ -1,111 +1,112 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f5f5f5;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+main {
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el formulario */
+.search-form {
+  margin-bottom: 20px;
+}
+
+.searchbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
-  main {
-    text-align: center;
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Estilos para el formulario */
-  .search-form {
-    margin-bottom: 20px;
-  }
-  
-  .searchbox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-  }
-  
-  .search {
-    width: 250px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
-  
-  .btn button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    background-color: #1e77d6;
-    color: white;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-left: 10px;
-  }
-  
-  /* Estilos para la tarjeta del clima */
-  .weather-card {
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .city {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .date {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .temperature {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .temp-img {
-    width: 80px;
-  }
-  
-  .temp {
-    font-size: 36px;
-    font-weight: bold;
-  }
-  
-  .weather {
-    font-size: 18px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .range {
-    font-size: 18px;
-  }
-  
-  /* Estilos para el pie de página */
-  footer{
-    position: fixed;
-    bottom: 20px;
-    padding: 20px opx;
-    border-top: 1px solid grey;
-    width: 100%;
-    text-align: center;
+}
+
+.search {
+  width: 250px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.btn button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: #1e77d6;
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+/* Estilos para la tarjeta del clima */
+.weather-card {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.city {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.date {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.temperature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.temp-img {
+  width: 80px;
+}
+
+.temp {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.weather {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.range {
+  font-size: 18px;
+}
+
+/* Estilos para el pie de página */
+footer{
+  position: fixed;
+  bottom: 20px;
+  padding: 20px opx;
+  border-top: 1px solid grey;
+  width: 100%;
+  text-align: center;
 }
 
 
 #map {
-  height: 200px;
-  width: 400px;
-  margin-left: 20px;
+height: 200px;
+width: 400px;
+margin-left: 20px;
+border-radius: 10PX;
 }
